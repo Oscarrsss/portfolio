@@ -1,0 +1,114 @@
+h1{
+    text-decoration: underline;
+    color: red;
+    font-family: serif; 
+    font-style: italic;
+    font-weight: thin;
+    font-size: 5rem;
+    text-align: center;
+}
+
+p{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: start;
+    font-size: 20px;
+}
+
+.text-gradient {
+    background: linear-gradient(187deg, red, rgb(255, 0, 144));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/*White outline box*/
+.box{
+    margin: auto;
+    width: 57rem;
+    height: fit-content;
+    background-color: transparent;
+    padding: 1rem;
+    border: 1px solid white;
+}
+
+/* Reset basic styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  overflow-x: hidden;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+}
+
+.fade-text {
+    font-size: 9p;
+    font-weight: thin;
+    background: linear-gradient(55deg, #ff0080, #ff0000, #ff0080, #ff0000, #ff33aa, #ff0051, #ff0080);
+    background-size: 100% 100%;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  .image-cont-1{
+    position: relative;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    width: 100%;
+    height: fit-content;
+  }
+
+  .images-1{
+    object-fit: cover;
+    width: 15rem;
+    height: 15rem;
+  }
+  .image-right{
+    position: relative;
+    right: -30rem;
+  }
+
+  .AE86{
+    position: relative;
+    width: 15rem;
+    height: 15rem;
+    left:-10rem;
+  }
+
+  .image-cont-2{
+    position: relative;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    width: 100%;
+    height: fit-content;
+    margin: auto;
+  }
+
+  .image-cont-2 > p{
+    position: relative;
+    top: 5rem;
+  }
+
+.content3{
+  position: relative;
+  display: flex;
+  flex: 2;
+  flex-direction: row;
+  width: 100%;
+  height: fit-content;
+}
+
+  .content3 >p{
+    position: relative;
+    top: 13rem;
+  }

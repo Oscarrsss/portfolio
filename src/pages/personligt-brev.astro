@@ -1,0 +1,151 @@
+---
+import { Image } from 'astro:assets';
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+
+import mk2 from '@public/Bilder/mk2.jpg';
+import challenger from '@public/Bilder/challenger.jpg'
+import AE86 from '@public/Bilder/AE86.gif'
+---
+
+<Layout title="Personligt Brev">
+  <main>
+    <h1 class="text-gradient">Personal letter</h1>
+    <!-- Border Box for Personal Letter Content -->
+    <div class="box">
+      <p>
+        Hi my name is Oscar! I have a big intrest in cars, music, image & 3D design. 
+      
+        
+      </p>
+
+      <div class="image-cont-1">
+        <Image src={mk2} alt="mk2" class="images-1" />
+        <Image src={challenger} alt="challanger" class="images-1 image-right" />
+      </div>
+      
+      <p> intro| I'm a 22 year old student with a lot of diffrent intrests. 
+        A couple of them is cars and photoshop and cad. These two intrest are something that works very well together. 
+
+      </p>
+    
+      <div class="image-cont-2">
+      <Image src={AE86} alt="AE86" class="AE86"/>
+      <p class="p1">
+        bilar 
+      </p>
+    </div>
+      </div>
+        
+      <div class="content3">
+        <p>
+          3D design photoshop
+        </p></div>
+    </div>
+
+    <!-- Centered Navbar at the top -->
+    <nav class="navbar">
+      <div class="navbar-container">
+        <!-- Navbar Buttons with Custom Styling -->
+        <a href="/" class="navbar-link home-link">Home</a> <!-- Link to index.astro -->
+        <a href="/cv" class="navbar-link projects-link">CV</a>
+        <a href="/personligt-brev" class="navbar-link contact-link">Personal letter </a>
+      </div>
+    </nav>
+  </main>
+
+  <style>
+    /* Navbar container styling */
+    .navbar {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .navbar-container {
+      display: inline-flex;
+      gap: 1.5rem;
+      justify-content: center;
+    }
+
+    /* Link styling */
+    .navbar-link {
+      text-decoration: none;
+      background-color: transparent;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 9999px;
+      font-weight: bold;
+      transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    }
+
+    /* Hover and active styles for each button */
+    .home-link:hover {
+      background-color: #ff0000;
+      color: white;
+    }
+    
+    .projects-link:hover {
+      background-color: #ff008c;
+      color: white;
+    }
+    
+    .contact-link:hover {
+      background-color: #ff0000;
+      color: white;
+    }
+
+    /* Heading and paragraph styling */
+    h1 {
+      text-decoration: underline;
+      color: red;
+      font-family: serif; 
+      font-style: italic;
+      font-weight: bolder;
+      font-size: 5rem;
+      text-align: center;
+    }
+
+    p {
+      color: white;
+      font-family: 'Times New Roman', Times, serif;
+      text-align: start;
+      font-size: 20px;
+    }
+
+    /* Text gradient */
+    .text-gradient {
+      background: linear-gradient(187deg, red, rgb(255, 0, 144));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* Box styling */
+    .box {
+      margin: auto;
+      width: 57rem;
+      height: 21rem;
+      background-color: transparent;
+      padding: 1rem;
+      border: 1px solid white;
+    }
+
+    /* Basic reset and full-screen styling */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body, html {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #000;
+    }
+  </style>
+</Layout>
