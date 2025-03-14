@@ -91,7 +91,7 @@ body, html {
 /*White outline box*/
 .box{
   position: relative;
-  top: 10rem;
+  top: 12rem;
   margin: auto;
   width: 57rem;
   height: fit-content;
@@ -138,6 +138,7 @@ padding: 0;
 
   .AE86{
     position: relative;
+    top: 0.5rem;
     width: 15rem;
     height: 15rem;
     left:-10rem;
@@ -153,9 +154,10 @@ padding: 0;
     margin: auto;
   }
 
-  .image-cont-2 > p{
+  .p2 > p{
     position: relative;
-    top: 5rem;
+    top: -14rem;
+    left: 6rem;
   }
 
 .content3{
@@ -169,4 +171,14 @@ padding: 0;
 
   .content3 >p{
     position: relative;
+    top: 1rem;
+    left: -14rem;
   }
+
+.focus{
+  position: relative;
+  top: -12rem;
+  width: 20rem;
+  height: 12rem;
+  left:17rem; 
+}
